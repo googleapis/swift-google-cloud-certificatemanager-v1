@@ -70,7 +70,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListCertificates")
   public func listCertificates(
     request: ListCertificatesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificatesResponse {
     try await self.inner.listCertificates(request: request, options: options)
   }
 
@@ -81,7 +81,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
     byItem: ListCertificatesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Certificate, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse
+      (token: Swift.String) async throws -> GoogleCloudCertificateManagerV1.ListCertificatesResponse
       in
       var request = byItem
       request.pageToken = token
@@ -95,7 +95,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetCertificate")
   public func getCertificate(
     request: GetCertificateRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.Certificate {
+  ) async throws -> GoogleCloudCertificateManagerV1.Certificate {
     try await self.inner.getCertificate(request: request, options: options)
   }
 
@@ -285,7 +285,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListCertificateMaps")
   public func listCertificateMaps(
     request: ListCertificateMapsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse {
     try await self.inner.listCertificateMaps(request: request, options: options)
   }
 
@@ -297,7 +297,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateMap, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listCertificateMaps(request: request, options: options)
@@ -310,7 +310,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetCertificateMap")
   public func getCertificateMap(
     request: GetCertificateMapRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMap {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMap {
     try await self.inner.getCertificateMap(request: request, options: options)
   }
 
@@ -504,7 +504,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListCertificateMapEntries")
   public func listCertificateMapEntries(
     request: ListCertificateMapEntriesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse {
     try await self.inner.listCertificateMapEntries(request: request, options: options)
   }
 
@@ -516,7 +516,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateMapEntry, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listCertificateMapEntries(request: request, options: options)
@@ -529,7 +529,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetCertificateMapEntry")
   public func getCertificateMapEntry(
     request: GetCertificateMapEntryRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMapEntry {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMapEntry {
     try await self.inner.getCertificateMapEntry(request: request, options: options)
   }
 
@@ -721,7 +721,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListDnsAuthorizations")
   public func listDnsAuthorizations(
     request: ListDnsAuthorizationsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse {
     try await self.inner.listDnsAuthorizations(request: request, options: options)
   }
 
@@ -733,7 +733,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<DnsAuthorization, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse in
+        -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listDnsAuthorizations(request: request, options: options)
@@ -746,7 +746,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetDnsAuthorization")
   public func getDnsAuthorization(
     request: GetDnsAuthorizationRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.DnsAuthorization {
+  ) async throws -> GoogleCloudCertificateManagerV1.DnsAuthorization {
     try await self.inner.getDnsAuthorization(request: request, options: options)
   }
 
@@ -936,7 +936,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListCertificateIssuanceConfigs")
   public func listCertificateIssuanceConfigs(
     request: ListCertificateIssuanceConfigsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse {
     try await self.inner.listCertificateIssuanceConfigs(request: request, options: options)
   }
 
@@ -948,7 +948,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateIssuanceConfig, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listCertificateIssuanceConfigs(request: request, options: options)
@@ -961,7 +961,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetCertificateIssuanceConfig")
   public func getCertificateIssuanceConfig(
     request: GetCertificateIssuanceConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig {
     try await self.inner.getCertificateIssuanceConfig(request: request, options: options)
   }
 
@@ -1091,7 +1091,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_ListTrustConfigs")
   public func listTrustConfigs(
     request: ListTrustConfigsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse {
     try await self.inner.listTrustConfigs(request: request, options: options)
   }
 
@@ -1102,7 +1102,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
     byItem: ListTrustConfigsRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<TrustConfig, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse
+      (token: Swift.String) async throws -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse
       in
       var request = byItem
       request.pageToken = token
@@ -1116,7 +1116,7 @@ public class CertificateManagerClient: Clients.CertificateManagerProtocol {
   /// @Snippet(path: "CertificateManager_GetTrustConfig")
   public func getTrustConfig(
     request: GetTrustConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.TrustConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.TrustConfig {
     try await self.inner.getTrustConfig(request: request, options: options)
   }
 
@@ -1405,7 +1405,7 @@ extension Clients {
   public protocol CertificateManagerProtocol {
     /// See `CertificateManagerClient.listCertificates`.
     func listCertificates(request: ListCertificatesRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse
+      -> GoogleCloudCertificateManagerV1.ListCertificatesResponse
 
     /// See `CertificateManagerClient.listCertificates`.
     func listCertificates(
@@ -1419,12 +1419,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getCertificate`.
     func getCertificate(request: GetCertificateRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.Certificate
+      -> GoogleCloudCertificateManagerV1.Certificate
 
     /// See `CertificateManagerClient.getCertificate`.
     func getCertificate(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.Certificate
+    ) async throws -> GoogleCloudCertificateManagerV1.Certificate
 
     /// See `CertificateManagerClient.createCertificate`.
     func createCertificate(request: CreateCertificateRequest) async throws
@@ -1470,7 +1470,7 @@ extension Clients {
 
     /// See `CertificateManagerClient.listCertificateMaps`.
     func listCertificateMaps(request: ListCertificateMapsRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse
+      -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse
 
     /// See `CertificateManagerClient.listCertificateMaps`.
     func listCertificateMaps(
@@ -1484,12 +1484,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getCertificateMap`.
     func getCertificateMap(request: GetCertificateMapRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.CertificateMap
+      -> GoogleCloudCertificateManagerV1.CertificateMap
 
     /// See `CertificateManagerClient.getCertificateMap`.
     func getCertificateMap(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMap
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateMap
 
     /// See `CertificateManagerClient.createCertificateMap`.
     func createCertificateMap(request: CreateCertificateMapRequest) async throws
@@ -1535,7 +1535,7 @@ extension Clients {
 
     /// See `CertificateManagerClient.listCertificateMapEntries`.
     func listCertificateMapEntries(request: ListCertificateMapEntriesRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse
+      -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse
 
     /// See `CertificateManagerClient.listCertificateMapEntries`.
     func listCertificateMapEntries(
@@ -1549,12 +1549,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getCertificateMapEntry`.
     func getCertificateMapEntry(request: GetCertificateMapEntryRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.CertificateMapEntry
+      -> GoogleCloudCertificateManagerV1.CertificateMapEntry
 
     /// See `CertificateManagerClient.getCertificateMapEntry`.
     func getCertificateMapEntry(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMapEntry
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateMapEntry
 
     /// See `CertificateManagerClient.createCertificateMapEntry`.
     func createCertificateMapEntry(request: CreateCertificateMapEntryRequest) async throws
@@ -1600,7 +1600,7 @@ extension Clients {
 
     /// See `CertificateManagerClient.listDnsAuthorizations`.
     func listDnsAuthorizations(request: ListDnsAuthorizationsRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse
+      -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse
 
     /// See `CertificateManagerClient.listDnsAuthorizations`.
     func listDnsAuthorizations(
@@ -1614,12 +1614,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getDnsAuthorization`.
     func getDnsAuthorization(request: GetDnsAuthorizationRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.DnsAuthorization
+      -> GoogleCloudCertificateManagerV1.DnsAuthorization
 
     /// See `CertificateManagerClient.getDnsAuthorization`.
     func getDnsAuthorization(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.DnsAuthorization
+    ) async throws -> GoogleCloudCertificateManagerV1.DnsAuthorization
 
     /// See `CertificateManagerClient.createDnsAuthorization`.
     func createDnsAuthorization(request: CreateDnsAuthorizationRequest) async throws
@@ -1665,7 +1665,7 @@ extension Clients {
 
     /// See `CertificateManagerClient.listCertificateIssuanceConfigs`.
     func listCertificateIssuanceConfigs(request: ListCertificateIssuanceConfigsRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse
+      -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse
 
     /// See `CertificateManagerClient.listCertificateIssuanceConfigs`.
     func listCertificateIssuanceConfigs(
@@ -1679,12 +1679,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getCertificateIssuanceConfig`.
     func getCertificateIssuanceConfig(request: GetCertificateIssuanceConfigRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig
+      -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig
 
     /// See `CertificateManagerClient.getCertificateIssuanceConfig`.
     func getCertificateIssuanceConfig(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig
 
     /// See `CertificateManagerClient.createCertificateIssuanceConfig`.
     func createCertificateIssuanceConfig(request: CreateCertificateIssuanceConfigRequest)
@@ -1716,7 +1716,7 @@ extension Clients {
 
     /// See `CertificateManagerClient.listTrustConfigs`.
     func listTrustConfigs(request: ListTrustConfigsRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse
+      -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse
 
     /// See `CertificateManagerClient.listTrustConfigs`.
     func listTrustConfigs(
@@ -1730,12 +1730,12 @@ extension Clients {
 
     /// See `CertificateManagerClient.getTrustConfig`.
     func getTrustConfig(request: GetTrustConfigRequest) async throws
-      -> GoogleCloudCertificatemanagerV1.TrustConfig
+      -> GoogleCloudCertificateManagerV1.TrustConfig
 
     /// See `CertificateManagerClient.getTrustConfig`.
     func getTrustConfig(
       name: Swift.String,
-    ) async throws -> GoogleCloudCertificatemanagerV1.TrustConfig
+    ) async throws -> GoogleCloudCertificateManagerV1.TrustConfig
 
     /// See `CertificateManagerClient.createTrustConfig`.
     func createTrustConfig(request: CreateTrustConfigRequest) async throws
@@ -1826,7 +1826,7 @@ extension Clients {
     /// See `CertificateManagerClient.listCertificates`.
     func listCertificates(
       request: ListCertificatesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListCertificatesResponse
 
     /// See `CertificateManagerClient.listCertificates`.
     func listCertificates(
@@ -1836,7 +1836,7 @@ extension Clients {
     /// See `CertificateManagerClient.getCertificate`.
     func getCertificate(
       request: GetCertificateRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.Certificate
+    ) async throws -> GoogleCloudCertificateManagerV1.Certificate
 
     /// See `CertificateManagerClient.createCertificate`.
     func createCertificate(
@@ -1871,7 +1871,7 @@ extension Clients {
     /// See `CertificateManagerClient.listCertificateMaps`.
     func listCertificateMaps(
       request: ListCertificateMapsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse
 
     /// See `CertificateManagerClient.listCertificateMaps`.
     func listCertificateMaps(
@@ -1881,7 +1881,7 @@ extension Clients {
     /// See `CertificateManagerClient.getCertificateMap`.
     func getCertificateMap(
       request: GetCertificateMapRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMap
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateMap
 
     /// See `CertificateManagerClient.createCertificateMap`.
     func createCertificateMap(
@@ -1916,7 +1916,7 @@ extension Clients {
     /// See `CertificateManagerClient.listCertificateMapEntries`.
     func listCertificateMapEntries(
       request: ListCertificateMapEntriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse
 
     /// See `CertificateManagerClient.listCertificateMapEntries`.
     func listCertificateMapEntries(
@@ -1926,7 +1926,7 @@ extension Clients {
     /// See `CertificateManagerClient.getCertificateMapEntry`.
     func getCertificateMapEntry(
       request: GetCertificateMapEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMapEntry
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateMapEntry
 
     /// See `CertificateManagerClient.createCertificateMapEntry`.
     func createCertificateMapEntry(
@@ -1961,7 +1961,7 @@ extension Clients {
     /// See `CertificateManagerClient.listDnsAuthorizations`.
     func listDnsAuthorizations(
       request: ListDnsAuthorizationsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse
 
     /// See `CertificateManagerClient.listDnsAuthorizations`.
     func listDnsAuthorizations(
@@ -1971,7 +1971,7 @@ extension Clients {
     /// See `CertificateManagerClient.getDnsAuthorization`.
     func getDnsAuthorization(
       request: GetDnsAuthorizationRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.DnsAuthorization
+    ) async throws -> GoogleCloudCertificateManagerV1.DnsAuthorization
 
     /// See `CertificateManagerClient.createDnsAuthorization`.
     func createDnsAuthorization(
@@ -2006,7 +2006,7 @@ extension Clients {
     /// See `CertificateManagerClient.listCertificateIssuanceConfigs`.
     func listCertificateIssuanceConfigs(
       request: ListCertificateIssuanceConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse
 
     /// See `CertificateManagerClient.listCertificateIssuanceConfigs`.
     func listCertificateIssuanceConfigs(
@@ -2016,7 +2016,7 @@ extension Clients {
     /// See `CertificateManagerClient.getCertificateIssuanceConfig`.
     func getCertificateIssuanceConfig(
       request: GetCertificateIssuanceConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig
+    ) async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig
 
     /// See `CertificateManagerClient.createCertificateIssuanceConfig`.
     func createCertificateIssuanceConfig(
@@ -2041,7 +2041,7 @@ extension Clients {
     /// See `CertificateManagerClient.listTrustConfigs`.
     func listTrustConfigs(
       request: ListTrustConfigsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse
+    ) async throws -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse
 
     /// See `CertificateManagerClient.listTrustConfigs`.
     func listTrustConfigs(
@@ -2051,7 +2051,7 @@ extension Clients {
     /// See `CertificateManagerClient.getTrustConfig`.
     func getTrustConfig(
       request: GetTrustConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudCertificatemanagerV1.TrustConfig
+    ) async throws -> GoogleCloudCertificateManagerV1.TrustConfig
 
     /// See `CertificateManagerClient.createTrustConfig`.
     func createTrustConfig(
@@ -2123,14 +2123,14 @@ extension Clients {
 // Default implementations
 extension Clients.CertificateManagerProtocol {
   public func listCertificates(request: ListCertificatesRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse
+    -> GoogleCloudCertificateManagerV1.ListCertificatesResponse
   {
     try await self.listCertificates(request: request, options: .init())
   }
 
   public func listCertificates(
     request: ListCertificatesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificatesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2144,7 +2144,7 @@ extension Clients.CertificateManagerProtocol {
     byItem: ListCertificatesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Certificate, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudCertificatemanagerV1.ListCertificatesResponse
+      (token: Swift.String) async throws -> GoogleCloudCertificateManagerV1.ListCertificatesResponse
       in
       throw GoogleCloudGax.RequestError.unimplemented
     }
@@ -2161,20 +2161,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getCertificate(request: GetCertificateRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.Certificate
+    -> GoogleCloudCertificateManagerV1.Certificate
   {
     try await self.getCertificate(request: request, options: .init())
   }
 
   public func getCertificate(
     request: GetCertificateRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.Certificate {
+  ) async throws -> GoogleCloudCertificateManagerV1.Certificate {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getCertificate(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.Certificate {
+  ) async throws -> GoogleCloudCertificateManagerV1.Certificate {
     let request = GetCertificateRequest().with {
       $0.name = name
     }
@@ -2299,14 +2299,14 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func listCertificateMaps(request: ListCertificateMapsRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse
+    -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse
   {
     try await self.listCertificateMaps(request: request, options: .init())
   }
 
   public func listCertificateMaps(
     request: ListCertificateMapsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2321,7 +2321,7 @@ extension Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateMap, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateMapsResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateMapsResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2337,20 +2337,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getCertificateMap(request: GetCertificateMapRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.CertificateMap
+    -> GoogleCloudCertificateManagerV1.CertificateMap
   {
     try await self.getCertificateMap(request: request, options: .init())
   }
 
   public func getCertificateMap(
     request: GetCertificateMapRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMap {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMap {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getCertificateMap(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMap {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMap {
     let request = GetCertificateMapRequest().with {
       $0.name = name
     }
@@ -2475,14 +2475,14 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func listCertificateMapEntries(request: ListCertificateMapEntriesRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse
+    -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse
   {
     try await self.listCertificateMapEntries(request: request, options: .init())
   }
 
   public func listCertificateMapEntries(
     request: ListCertificateMapEntriesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2497,7 +2497,7 @@ extension Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateMapEntry, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateMapEntriesResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateMapEntriesResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2513,20 +2513,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getCertificateMapEntry(request: GetCertificateMapEntryRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.CertificateMapEntry
+    -> GoogleCloudCertificateManagerV1.CertificateMapEntry
   {
     try await self.getCertificateMapEntry(request: request, options: .init())
   }
 
   public func getCertificateMapEntry(
     request: GetCertificateMapEntryRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMapEntry {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMapEntry {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getCertificateMapEntry(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateMapEntry {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateMapEntry {
     let request = GetCertificateMapEntryRequest().with {
       $0.name = name
     }
@@ -2653,14 +2653,14 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func listDnsAuthorizations(request: ListDnsAuthorizationsRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse
+    -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse
   {
     try await self.listDnsAuthorizations(request: request, options: .init())
   }
 
   public func listDnsAuthorizations(
     request: ListDnsAuthorizationsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2675,7 +2675,7 @@ extension Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<DnsAuthorization, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListDnsAuthorizationsResponse in
+        -> GoogleCloudCertificateManagerV1.ListDnsAuthorizationsResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2691,20 +2691,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getDnsAuthorization(request: GetDnsAuthorizationRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.DnsAuthorization
+    -> GoogleCloudCertificateManagerV1.DnsAuthorization
   {
     try await self.getDnsAuthorization(request: request, options: .init())
   }
 
   public func getDnsAuthorization(
     request: GetDnsAuthorizationRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.DnsAuthorization {
+  ) async throws -> GoogleCloudCertificateManagerV1.DnsAuthorization {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getDnsAuthorization(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.DnsAuthorization {
+  ) async throws -> GoogleCloudCertificateManagerV1.DnsAuthorization {
     let request = GetDnsAuthorizationRequest().with {
       $0.name = name
     }
@@ -2829,14 +2829,14 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func listCertificateIssuanceConfigs(request: ListCertificateIssuanceConfigsRequest)
-    async throws -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse
+    async throws -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse
   {
     try await self.listCertificateIssuanceConfigs(request: request, options: .init())
   }
 
   public func listCertificateIssuanceConfigs(
     request: ListCertificateIssuanceConfigsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2851,7 +2851,7 @@ extension Clients.CertificateManagerProtocol {
   ) throws -> any AsyncSequence<CertificateIssuanceConfig, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudCertificatemanagerV1.ListCertificateIssuanceConfigsResponse in
+        -> GoogleCloudCertificateManagerV1.ListCertificateIssuanceConfigsResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2867,20 +2867,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getCertificateIssuanceConfig(request: GetCertificateIssuanceConfigRequest)
-    async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig
+    async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig
   {
     try await self.getCertificateIssuanceConfig(request: request, options: .init())
   }
 
   public func getCertificateIssuanceConfig(
     request: GetCertificateIssuanceConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getCertificateIssuanceConfig(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.CertificateIssuanceConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.CertificateIssuanceConfig {
     let request = GetCertificateIssuanceConfigRequest().with {
       $0.name = name
     }
@@ -2967,14 +2967,14 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func listTrustConfigs(request: ListTrustConfigsRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse
+    -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse
   {
     try await self.listTrustConfigs(request: request, options: .init())
   }
 
   public func listTrustConfigs(
     request: ListTrustConfigsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse {
+  ) async throws -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2988,7 +2988,7 @@ extension Clients.CertificateManagerProtocol {
     byItem: ListTrustConfigsRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<TrustConfig, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudCertificatemanagerV1.ListTrustConfigsResponse
+      (token: Swift.String) async throws -> GoogleCloudCertificateManagerV1.ListTrustConfigsResponse
       in
       throw GoogleCloudGax.RequestError.unimplemented
     }
@@ -3005,20 +3005,20 @@ extension Clients.CertificateManagerProtocol {
   }
 
   public func getTrustConfig(request: GetTrustConfigRequest) async throws
-    -> GoogleCloudCertificatemanagerV1.TrustConfig
+    -> GoogleCloudCertificateManagerV1.TrustConfig
   {
     try await self.getTrustConfig(request: request, options: .init())
   }
 
   public func getTrustConfig(
     request: GetTrustConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudCertificatemanagerV1.TrustConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.TrustConfig {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getTrustConfig(
     name: Swift.String,
-  ) async throws -> GoogleCloudCertificatemanagerV1.TrustConfig {
+  ) async throws -> GoogleCloudCertificateManagerV1.TrustConfig {
     let request = GetTrustConfigRequest().with {
       $0.name = name
     }
